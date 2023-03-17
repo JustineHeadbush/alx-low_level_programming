@@ -19,11 +19,11 @@ int main(void)
 
 		if (n == 9 && m == 9)
 			continue;
-	}
-	}
+
 		putchar(',');
 		putchar(' ');
-
+	}
+	}
 		putchar('\n');
 		return (0);
 
