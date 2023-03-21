@@ -12,7 +12,7 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		res = num1 + num2;
-		printf("%d", sum);
+		printf("%d", res);
 
 		num1 = num2;
 		num2 = res;
