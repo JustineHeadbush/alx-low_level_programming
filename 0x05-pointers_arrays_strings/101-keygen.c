@@ -7,10 +7,12 @@
  */
 int main(void)
 {
-	 srand(time(0));
+	int i, n = 10;
 
-	 int num1 = rand() % 200;
+	srand((unsigned int) time(0));
 
-			printf("%d", num1);
+	for (i = 0; i < n; i++)
+		printf("%d\n", rand() % 201);
+
 	return (0);
 }
