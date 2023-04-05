@@ -8,7 +8,7 @@
  */
 int calculate_square_root(int i, int j)
 {
-	if (i != j*j)
+	if (j <= 0)
 	{
 		return (-1);
 	}
