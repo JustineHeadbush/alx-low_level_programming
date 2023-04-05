@@ -8,7 +8,7 @@
  */
 int find_prime_number(int i, int j)
 {
-	while (i % j == 0 && j != 1)
+	if (i % j == 0 && j != 1)
 	{
 		return (0);
 	}
