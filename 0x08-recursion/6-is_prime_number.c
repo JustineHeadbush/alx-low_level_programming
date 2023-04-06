@@ -12,15 +12,15 @@ int find_prime_number(int i, int j)
 	{
 		return (0);
 	}
-	if (i == j)
+	else if (j == 1)
 	{
 		return (1);
 	}
-	return (find_prime_number(i, j + 1));
+	return (find_prime_number(i, j - 1));
 }
 /**
  * is_prime_number - checks if a number is a prime number
- * @n: the number that will be chevked
+ * @n: the number that will be checked
  * Return: 1 if n is a prime number
  */
 int is_prime_number(int n)
@@ -31,6 +31,6 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (find_prime_number(n, 2));
+		return (find_prime_number(n, n - 1));
 	}
 }
