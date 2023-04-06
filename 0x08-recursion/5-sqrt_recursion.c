@@ -12,12 +12,12 @@ int calculate_square_root(int i, int j)
 	{
 		return (-1);
 	}
-	if (i == j * j)
+	else if (i == j * j)
 	{
 		return (j);
 	}
 	else
-		return (calculate_square_root(i, j + 1));
+		return (calculate_square_root(i, j - 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
@@ -31,5 +31,5 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 	else
-		return (calculate_square_root(n, n / 2));
+		return (calculate_square_root(n, n));
 }
