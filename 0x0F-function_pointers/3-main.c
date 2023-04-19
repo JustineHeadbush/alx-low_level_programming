@@ -1,4 +1,4 @@
-#include "3-main.c"
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -18,9 +18,9 @@ int main(int __attribute__((__unused__))  argc, char *argv[])
 		exit(98);
 	}
 
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
-	char oper = argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	oper = argv[2];
 
 	if (oper[1] != '\0' || get_op_func(oper) == NULL)
 	{
