@@ -28,7 +28,8 @@ int main(int __attribute__((__unused__))  argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*oper == '%' && b == 0) || (*oper == '/' && b == 0))
+	if ((*oper == '%' && b == 0) ||
+		(*oper == '/' && b == 0))
 		{
 			printf("Error\n");
 			exit(100);
