@@ -20,6 +20,6 @@ int (*get_op_func(char *s))(int, int)
 	int a = 0;
 
 	while (oper[a].op != NULL && *(oper[a].op) != *s)
-		i++;
+		a++;
 	return (oper[a].f);
 }
