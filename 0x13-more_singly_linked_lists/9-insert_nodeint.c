@@ -11,7 +11,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	unsigned int num;
 	listint_t *a, *b = *head;
 
-	if (head == NULL)
+	if (b == NULL)
 		return (NULL);
 
 	a = malloc(sizeof(listint_t));
